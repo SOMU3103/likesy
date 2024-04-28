@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(img/logo.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    background-color:rgb(0, 0, 0);
+    padding: 20px 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline;
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform:uppercase;
+}
+
+
+
+
+
+.content-container{
+    padding: 200px;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.content-left-title h2{
+    font-size: 40px;
+    font-weight: 600;
+    color:rgb(202, 161, 103);
+    margin-bottom: 5px;
+}
+.content-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color:rgb(202, 161, 103);
+    border-radius: 2px;
+}
+.content-inputs{
+    background-color: rgb(39, 36, 36);
+    width: 400px;
+    height: 25px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color:white;
+    border-radius: 50px;
+}
+.content-left textarea{
+
+    background-color: rgb(39, 36, 36);
+    height: 40px;
+    border-radius: 15px; 
+    padding-top: 20px;
+}
+.content-inputs:focus{
+    border: 2px solid rgb(202, 161, 103);
+
+}
+.content-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: rgb(202, 161, 103);
+    border: none;
+    border-radius: 50px;
+    background:linear-gradient(270deg,rgb(156, 119, 68),rgb(48, 37, 2));
+    cursor: pointer;
+
+}
+.content-right{
+    padding:72px;
+    color: rgb(202, 161, 103) ;
+text-align: center;
+}
+
+
+@media(max-widh:800px){
+    .content-inputs{
+        width: 80vw;
+    }
+    .content-right{
+        display: none;
+    }
+}
